@@ -46,6 +46,14 @@ The requirements.txt file is sort of like a manifest of the packages you are ins
 
 You want to use requirements.txt file as a best practice to track your dependencies and as a directive for pip to install those packages.
 
+If you already have packages installed using pip and you need to add requirements.txt file, you can 'freeze' the environment. This lists the already installed packages to requirements.txt.
+
+To do this simply run this command:
+
+```bash
+$ pip freeze > requirements.txt
+```
+
 ---
 
 Using a command like below will ensure that the packages are only installed in your newly created virtual environment. 

@@ -1,10 +1,10 @@
 # Sho's 15-min Python Env Tutorial
 
-Virtual environments in Python are really handy. The allow you to have dedicated workspace by project. Each workspace can run its own version of python and the projective dependencies.
+Virtual environments in Python are really handy. They allow you to have dedicated workspace by project. Each workspace can run its own version of python and the projective dependencies.
 
 In this model you don't have to worry about conflicts in library version for each project. You essentially provide an isolated working environment.
 
-This tutorial will assume you have python 3 and pip3 are already installed. I'll try to call out a nuances to python 2.7 though most of this should carry over.
+This tutorial will assume you have python and pip already installed. I'll try to call out a nuances to specific python versions though most of this should carry over.
 
 The 3 approaches to cover include:
 - virtualenv
@@ -52,5 +52,5 @@ Deactivating a virtual enviroment is easy. From within your virtual environment 
 (.envname)$ deactivate
 ```
 
---
+---
 

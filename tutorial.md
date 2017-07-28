@@ -58,3 +58,8 @@ Deactivating a virtual enviroment is also easy. From within your virtual environ
 
 ---
 
+# Done!
+
+You have now have use of python virtual environments in your arsenal
+
+Congratulations!!!

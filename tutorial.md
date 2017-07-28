@@ -30,7 +30,7 @@ $ virtualenv -p python3 .envname
 
 This creates a folder .envname containing all the libraries you need to run your virtual environment. In the example above I specified python3. It also includes a version of pip for package installs
 
---
+---
 
 To activate your new virtual environment
 
@@ -42,7 +42,7 @@ From there you can then install your specific project dependencies with requirem
 
 You want to use requirements.txt file as a best practice to track your dependencies and as a directive for pip to install those packages.
 
---
+---
 
 Using a command like below will ensure that the packages are only installed in your newly created virtual environment. If you deactivate and reactivate that env your dependendices are still in place.
 

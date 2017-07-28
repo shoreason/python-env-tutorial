@@ -96,7 +96,7 @@ $ source .envname/bin/activate
 
 In windows this looks like this
 
-``bash
+```bash
 .envname\Scripts\activate.bat
 ```
 

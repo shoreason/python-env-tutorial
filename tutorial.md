@@ -28,7 +28,7 @@ $ cd your_project_folder
 $ virtualenv -p python3 .envname
 ```
 
-This creates a folder .envname containing all the libraries you need to run your virtual environment. It also includes a version of pip for package installs
+This creates a folder .envname containing all the libraries you need to run your virtual environment. In the example above I specified python3. It also includes a version of pip for package installs
 
 To activate your new virtual environment
 
@@ -46,7 +46,7 @@ Using a command like below will ensure that the packages are only installed in y
 (.envname)$ pip install -r requirements.txt
 ```
 
-Deactivating a virtual enviroment is easy. From within your virtual environment type the below command
+Deactivating a virtual enviroment is also easy. From within your virtual environment type the below command
 
 ```bash
 (.envname)$ deactivate

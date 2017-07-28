@@ -72,6 +72,37 @@ Deactivating a virtual enviroment is also easy. From within your virtual environ
 
 ---
 
+# Running Python in venv
+
+If you have python3 then you get venv for free. It is very similar to virtualenv, though you probably should not expect to use this with python 2.
+
+Create your virtualenv environment
+
+```bash
+$ cd your_project_folder
+$ python3 -m venv .envname
+```
+
+Similar to virtualenv, this creates a folder .envname containing all the libraries you need to run your virtual environment. In the example above I specified python3. 
+
+---
+
+To activate your new virtual environment
+
+```bash
+$ source .envname/bin/activate
+(.envname)$
+```
+
+In windows this looks like this
+
+``bash
+.envname\Scripts\activate.bat
+```
+
+---
+
+
 # Done!
 
 You have now have use of python virtual environments in your arsenal

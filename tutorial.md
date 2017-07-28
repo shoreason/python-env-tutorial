@@ -1,6 +1,6 @@
 # Sho's 15-min Python Env Tutorial
 
-Virtual environments in Python are really handy. They allow you to have dedicated workspace by project. Each workspace can run its own version of python and the projective dependencies.
+Virtual environments in Python are really handy. They allow you to have dedicated workspace by project. Each workspace can run its own version of python and the project dependencies.
 
 In this model you don't have to worry about conflicts in library version for each project. You essentially provide an isolated working environment.
 

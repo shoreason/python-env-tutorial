@@ -105,6 +105,6 @@ In windows this looks like this
 
 # Done!
 
-You have now have use of python virtual environments in your arsenal
+You now have the ability to use python virtual environments in your arsenal
 
 Congratulations!!!

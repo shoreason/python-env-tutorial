@@ -102,6 +102,92 @@ In windows this looks like this
 
 ---
 
+# Running Python in conda
+
+Anaconda is a very powerful data platform. It has so many tools in its ecosystem to do data analytics. Conda is one of those.
+
+Conda plays the role of package and environment manager. Its syntax is slightly different from the other virtual environment managers. 
+
+Note:It is very tricky to get Anaconda or Conda playing nicely with other such package or environment managers.
+
+My recommendation? If you choose to go with Conda, stick with it all the way. The instructions below assume you have Anaconda or Conda installed.
+
+Create your virtual environment
+
+```bash
+$ cd your_project_folder
+$ conda create --name .envname python=3
+```
+
+The beautiful thing about conda is that it manages all your virtual environments centrally. So, unlike the other environment managers you don't see a local folder in your workspace. It also makes it easy to activate any environment regardless of where you are on your workstation. 
+
+In the example above I specified python3. 
+
+---
+
+To see a list of all your virtual environments, simply run the command below
+
+```bash
+conda env list
+```
+
+To verify the environment you are in, simply run the command below
+
+```bash
+conda info --envs
+```
+
+
+---
+
+To activate your new virtual environment
+
+```bash
+$ source activate .envname
+(.envname)$
+```
+
+In windows this looks like this
+
+```bash
+$ activate .envname
+```
+
+Deactivating a virtual enviroment is also easy. From within your virtual environment type the below command
+
+In Linux and OS X
+
+```bash
+$ source deactivate
+(.envname)$
+```
+
+In windows this looks like this
+
+```bash
+$ deactivate
+```
+---
+
+Package install using a 'pip install -r requirements.txt equivalent'
+
+Conda provides a way to install packages from a file list. If your packages are already listed in a requirements.txt file, simply run
+
+```bash
+$ conda install --yes --file requirements.txt
+```
+However, if one package fails to install all other dependencies will fail
+
+If creating a new environment and using a requirements file
+```bash
+$ conda create -n new .envname --file requirements.txt
+```
+
+To 'freeze' or create a requirements.txt from a existing environment
+```bash
+$ conda list -e > requirements.txt
+```
+---
 
 # Done!
 

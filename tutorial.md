@@ -21,6 +21,12 @@ Install Virtualenv
 $ pip install virtualenv
 ```
 
+Check you actually have Virtualenv
+
+```bash
+$ virtualenv --version
+```
+
 Create your virtualenv environment
 
 ```bash

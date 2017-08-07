@@ -122,10 +122,12 @@ Create your virtual environment
 
 ```bash
 $ cd your_project_folder
-$ conda create --name .envname python=3
+$ conda create --name envname python=3
 ```
 
 The beautiful thing about conda is that it manages all your virtual environments centrally. So, unlike the other environment managers you don't see a local folder in your workspace. It also makes it easy to activate any environment regardless of where you are on your workstation. 
+
+EDIT: removed the '.' in front of envname. Conda doesn't seem to like that
 
 In the example above I specified python3. 
 
@@ -149,14 +151,14 @@ conda info --envs
 To activate your new virtual environment
 
 ```bash
-$ source activate .envname
-(.envname)$
+$ source activate envname
+(envname)$
 ```
 
 In windows this looks like this
 
 ```bash
-$ activate .envname
+$ activate envname
 ```
 
 Deactivating a virtual enviroment is also easy. From within your virtual environment type the below command
@@ -165,7 +167,7 @@ In Linux and OS X
 
 ```bash
 $ source deactivate
-(.envname)$
+(envname)$
 ```
 
 In windows this looks like this
